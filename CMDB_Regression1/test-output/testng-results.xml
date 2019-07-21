@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="579136" started-at="2018-06-01T11:48:06Z" finished-at="2018-06-01T11:57:45Z">
+    <groups>
+    </groups>
+    <test name="Register An Application and Decommission - In Production" duration-ms="579136" started-at="2018-06-01T11:48:06Z" finished-at="2018-06-01T11:57:45Z">
+      <class name="com.serviceNow.testcases.CMDBTest">
+        <test-method status="PASS" signature="getSuiteName(org.testng.ITestContext)[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="getSuiteName" is-config="true" duration-ms="63" started-at="2018-06-01T17:18:05Z" finished-at="2018-06-01T17:18:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1992eaf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSuiteName -->
+        <test-method status="PASS" signature="setInputSheetName(java.lang.String)[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="setInputSheetName" is-config="true" duration-ms="1545" started-at="2018-06-01T17:18:06Z" finished-at="2018-06-01T17:18:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Input.xlsx]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setInputSheetName -->
+        <test-method status="PASS" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="setUp" is-config="true" duration-ms="817" started-at="2018-06-01T17:18:07Z" finished-at="2018-06-01T17:18:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CMDB]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@1992eaf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="login" duration-ms="42062" started-at="2018-06-01T17:18:08Z" finished-at="2018-06-01T17:18:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="RegisterAnApplication()[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="RegisterAnApplication" duration-ms="260517" started-at="2018-06-01T17:18:50Z" finished-at="2018-06-01T17:23:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterAnApplication -->
+        <test-method status="PASS" signature="ServiceOperationsManagerApproverlogin()[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="ServiceOperationsManagerApproverlogin" duration-ms="133697" started-at="2018-06-01T17:23:10Z" finished-at="2018-06-01T17:25:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ServiceOperationsManagerApproverlogin -->
+        <test-method status="PASS" signature="ServiceOperationsMDApproverlogin()[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="ServiceOperationsMDApproverlogin" duration-ms="108726" started-at="2018-06-01T17:25:24Z" finished-at="2018-06-01T17:27:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ServiceOperationsMDApproverlogin -->
+        <test-method status="PASS" signature="Register()[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="Register" duration-ms="4290" started-at="2018-06-01T17:27:13Z" finished-at="2018-06-01T17:27:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Register -->
+        <test-method status="PASS" signature="ApplicationDetailViewPage()[pri:0, instance:com.serviceNow.testcases.CMDBTest@204f30ec]" name="ApplicationDetailViewPage" duration-ms="27436" started-at="2018-06-01T17:27:17Z" finished-at="2018-06-01T17:27:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplicationDetailViewPage -->
+      </class> <!-- com.serviceNow.testcases.CMDBTest -->
+    </test> <!-- Register An Application and Decommission - In Production -->
+  </suite> <!-- Suite -->
+</testng-results>

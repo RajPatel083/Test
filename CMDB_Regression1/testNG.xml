@@ -1,0 +1,225 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false" thread-count="2">
+
+<parameter name="inputsheetname" value="Input.xlsx"/>  
+
+		<test name="Card and List View Verification" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      			<methods>
+      				<include name="Adminlogin"></include>
+      				<include name="Card_ListView_Verification"></include> 
+      				<include name="NonAdminLogin"></include> 
+      				      				
+				 </methods>
+    		</class>
+    	</classes>
+	</test>
+	
+	<test name="Register An Application and Decommission - Funded/Not Started" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      				<methods>
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication" />
+   		      		<include name="ProgramManagerApproverlogin"></include>
+      		     	<include name="ProgramMDApproverlogin"></include>
+      		     	<include name="Register"></include>
+      		     	<include name="ApplicationDetailViewPage"></include>
+      		     	<include name="RetireApplication"></include>
+      		     	<include name="Decommissioned"></include>
+
+				 </methods>
+    		</class>
+    	</classes>
+	</test>  
+	
+	
+		<test name="Register An Application and Decommission - In Production" preserve-order="true" enabled="true">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      				<methods>
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication" />
+   		      		<include name="ServiceOperationsManagerApproverlogin"></include>
+      		     	<include name="ServiceOperationsMDApproverlogin"></include>
+      		   		<include name="Register"></include>
+      		   		<include name="ApplicationDetailViewPage"></include>
+    		    <!--<include name="RetireApplication"></include>
+      		    	<include name="Decommissioned"></include> -->
+				 </methods>
+    		</class>
+    	</classes>
+	</test> 
+	
+	<test name="Pencil function  - In Production" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      				<methods>
+      				
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication"/>
+   		      		<include name="ServiceOperationsManagerApproverlogin"></include>
+      		     	<include name="ServiceOperationsMDApproverlogin"></include>	     	
+      		     	<include name="Register"></include>
+      		     	<include name="EditApplicationInfoSec"></include>
+   					<include name="EditCommunicationSec"></include>
+   					<include name="EditSupportSec"></include>
+   					<include name="EditTechnology"></include>
+   					<include name="EditLegalSec"></include>
+   					<include name="EditPrimaryContactsSec"></include>
+   					<include name="EditAssignedGroupUser"></include>
+ 
+				 </methods>
+    		</class>
+    	</classes>
+	</test> 
+	
+	<test name="Add Technology through Plus  - In Production" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      				<methods>
+      				
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication"/>
+   		      		<include name="ServiceOperationsManagerApproverlogin"></include>
+      		     	<include name="ServiceOperationsMDApproverlogin"></include>
+      		     	<include name="Register"></include>
+      		     	<include name="AddTechnologyDetails_Saas"></include>
+      		     	<include name="AddTechnologyDetails_DataCenter"></include>
+      		     	<include name="EditAssignedGroupUser"></include>
+      		     	<include name="Decomm_CancelledStatus"></include>
+      		     	<include name="Vendordetail"></include>
+      		     	<include name="MySurveyListview_cardview"></include>
+      		     
+      		     	
+				 </methods>
+    		</class>
+    	</classes>
+	</test> 
+	
+	
+	<test name="Verify An Application - Funded/Not Started" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      			<methods>
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication" />
+      		      	<include name="ProgramManagerApproverlogin"></include>
+      		     	<include name="ProgramMDApproverlogin"></include>
+      		     	<include name="Register"></include>
+      		        <include name="VerifyRequest"></include>
+      		   	   	<include name="RetireApplication"></include>
+      		      	<include name="Decommissioned"></include>
+
+				 </methods>
+    		</class>
+    	</classes>
+	</test> 
+	
+	<test name="Verify An Application - In Production" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      			<methods>
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication" />
+   		      		<include name="ServiceOperationsManagerApproverlogin"></include>
+      		     	<include name="ServiceOperationsMDApproverlogin"></include>
+      		     	<include name="Register"></include>
+      		     	<include name="ApplicationDetailViewPage"></include>
+      		     	<include name="VerifyRequest"></include>
+      		      	<include name="RetireApplication"></include>
+      		      	<include name="Decommissioned"></include>
+				 </methods>
+    		</class>
+    	</classes>
+	</test> 
+
+	<test name="RegistrationCancellation - Funded/Not Started" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      			<methods>
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication" />
+      		      	<include name="ProgramManagerApproverlogin"></include>
+      		     	<include name="ProgramMDApproverlogin"></include>
+      		     	<include name="RegistrationCancel"></include>
+
+				 </methods>
+    		</class>
+    	</classes>
+	</test>  
+	
+		<test name="RegistrationCancellation - In Production" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      			<methods>
+      				<include name="login"></include>
+      		     	<include name="RegisterAnApplication" />
+      		      	<include name="ServiceOperationsManagerApproverlogin"></include>
+      		     	<include name="ServiceOperationsMDApproverlogin"></include>
+      		     	<include name="RegistrationCancel"></include>
+				</methods>
+    		</class>
+    	</classes>
+	</test> 	
+	
+	<test name="SearchApplicationRepository" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      			<methods>
+      				<include name="login"></include>
+      		     	<include name="SearchApplicationRepository"/>
+      		      	
+				 </methods>
+    		</class>
+    	</classes>
+	</test>
+
+	<test name="Create Survey" preserve-order="true" enabled="false">
+	<parameter name="testcaseName" value="CMDB"/> 
+	
+		<classes>
+    		<class name="com.serviceNow.testcases.CMDBTest">
+      	
+      			<methods>
+      				<include name="CreateSurvey"></include>
+      		     	
+      		      	
+				 </methods>
+    		</class>
+    	</classes>
+	</test>
+	
+
+</suite>  <!--  Suite   -->

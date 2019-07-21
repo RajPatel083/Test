@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="inputsheetname" value="Input.xlsx"/>
+  <parameter name="testcaseName" value="CMDB"/>
+  <test name="Verifyapplication(failed)">
+    <parameter name="testcaseName" value="CMDB"/>
+    <classes>
+      <class name="com.serviceNow.testcases.CMDBTest">
+        <methods>
+          <include name="getSuiteName"/>
+          <include name="RunScheduledJob"/>
+          <include name="setUp"/>
+          <include name="setInputSheetName"/>
+        </methods>
+      </class> <!-- com.serviceNow.testcases.CMDBTest -->
+    </classes>
+  </test> <!-- Verifyapplication(failed) -->
+</suite> <!-- Failed suite [Suite] -->
